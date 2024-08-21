@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produktverwaltung</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
+<body>
+    <h1>Produktverwaltung</h1>
+   
+    <div id="productList">
+        <!-- Hier werden die Produkte angezeigt -->
+    </div>
+
+    <h2>Neues Produkt hinzufügen</h2>
+    <form id="addProductForm">
+        <table>
+            <tr>
+                <td><label for="id">ID:</label></td>
+                <td><input type="text" id="id" name="id" required></td>
+            </tr>
+            <tr>
+                <td><label for="item">Produkt:</label></td>
+                <td><input type="text" id="item" name="item" required></td>
+            </tr>
+            <tr>
+                <td><label for="preis">Preis:</label></td>
+                <td><input type="number" id="preis" name="preis" step="0.01" required></td>
+            </tr>
+            <tr>
+                <td><label for="typ">Typ:</label></td>
+                <td><input type="text" id="typ" name="typ" required></td>
+            </tr>
+        </table>
+<br>
+     <button type="submit">Produkt hinzufügen</button>
+    </form>
+    <div id="searchSection">
+      <label id="searchLabel" for="searchInput">
+          <img src="/imgages/search_icon.ico" alt="Suche Icon" style="width: 50px;">
+      </label>
+      <div>
+          <input type="text" id="searchInput" name="searchInput" placeholder="Suche nach ...">
+      </div>
+  </div>
+  <button id="searchButton">Suchen</button>
+<br>
+    <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+        <thead>
+          <tr>
+            <th class="mdl-data-table__cell--non-numeric">ID</th>
+            <th>Produkt</th>
+            <th>Preis</th>
+            <th>Typ</th>
+            <th>Löschen</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="mdl-data-table__cell--non-numeric">1</td>
+            <td>Acrylic (Transparent)</td>
+            <td>$2.90</td>
+            <td>Material</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td class="mdl-data-table__cell--non-numeric">2</td>
+            <td>Plywood (Birch)</td>
+            <td>$1.25</td>
+            <td>Material</td>
+            <td><input type="checkbox"></td>
+          </tr>
+          <tr>
+            <td class="mdl-data-table__cell--non-numeric">3</td>
+            <td>Laminate (Gold on Blue)</td>
+            <td>$2.35</td>
+            <td>Material</td>
+            <td><input type="checkbox"></td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="delete">Löschen</button>
+      
+      
+
+    <script src="index.js"></script>
+    <script src="package-lock.json"></script>
+    <script src="package.json"></script>
+</body>
+</html>

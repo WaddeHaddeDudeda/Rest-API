@@ -1,0 +1,44 @@
+// Um "package.json" zu erstellen muss man im cmd den Befehl "npm init" ausführen.
+
+// Um "package-lock.json" und den Ordner "node_modules" zu erstellen muss man
+im cmd den Befehl "npm install express --save"
+
+// Um eine "index.js" zu erstellen muss man im cmd den Befehl "type nul > index.js"
+ausführen.
+
+// wenn man dann live geht in vs-code und seinen port angibt, 
+wie bspw:"localhost:3000" dann erscheint die Seite und was geamcht werden muss, 
+wie bei "mySQL", wenn man dort den localhost eingibt...und sich die infos aus der 
+Datenbank entnimmt..... 
+
+// Mit dem Befehel "mkdir" kann man Ordner erstellen, bspw.: "mkdir gfx", so erstellt
+man dann im selben Ordner wo auch alle anderen Daten sind, den Ordner "gfx" 
+
+//"npm install turbo-cli -g" das "-g" steht für global, hier wird ein package 
+installiert welches für alle geht und man nicht immer alles einzeln Installieren muss
+
+
+//Das Backend ist weiterhin wichtig für Ihre Anwendung. Es dient dazu, Daten zu verarbeiten, zu speichern und APIs bereitzustellen, die Ihre React-Frontend-Anwendung nutzen kann.
+
+Backend separat starten, Befehl: "npm start" oder "node server.js" im Backend-Verzeichnis.
+
+//Das Frontend mit: "npm start" gestartet haben, ist die statische Benutzeroberfläche. Für eine vollständige Anwendung würden Sie beide Teile laufen lassen: das Backend für die Serverlogik und Datenverarbeitung, und das Frontend für die Benutzeroberfläche und Interaktion.
+
+Wenn Ihre Anwendung API-Aufrufe an das Backend macht, müssen Sie sicherstellen, dass beide Teile laufen und korrekt konfiguriert sind, um miteinander zu kommunizieren.
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Um die Verbindung zwischen Frontend und Backend herzustellen, müssen wir folgende Schritte unternehmen:
+
+Implementieren Sie im Backend (server.js) die notwendigen API-Endpunkte für CRUD-Operationen auf Produkte.(FERTIG)
+
+Passen Sie die Datenbankstruktur in database.js an, um die Produkttabelle zu 
+erstellen.(FERTIG)
+
+Erstellen Sie im Frontend einen Service (z.B. productService.js), der die API-Aufrufe zum Backend handhabt.(FERTIG)
+
+Aktualisieren Sie die ProductManagement.jsx, um die Methoden des productService für Datenbankoperationen zu verwenden.(FERTIG)
+
+Implementieren Sie Fehlerbehandlung und Ladestatusanzeigen
+im Frontend.(FERTIG)
+
+Jetzt Tests durchführen ob es geht!!
